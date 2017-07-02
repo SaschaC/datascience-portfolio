@@ -72,7 +72,7 @@ A character vector containing the name of the hospital with the specified rank a
 
 #### Example
 
-`rankall("heart failure", 3) # returns the hospital with the third-lowest mortality rate from heart failure across all states
+`rankall("heart failure", 3) # returns the hospital with the third-lowest mortality rate from heart failure across all states`
 
 ## Dataset
 
