@@ -6,9 +6,9 @@ run by the U.S. Department of Health and Human Services (http://hospitalcompare.
 ## Table of contents
 - [Setup](#setup)
 - [Functions](#functions)
-	- [best.R](#best)
-	- [rankhospital](#rankhospital)
-	- [rankall](#rankall)
+	- [best()](#best)
+	- [rankhospital()](#rankhospital)
+	- [rankall()](#rankall)
 - [Data set](#data)
 
 ## Setup
@@ -26,8 +26,8 @@ Find the best hospital with respect to mortality rates from "heart failure", "pn
 best(state, outcome) 
 
 #### Arguments
-*state*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with a 2-character abbreviated state name
-*outcome*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to "heart failure", "pneumonia", or "heart attack"
+**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with a 2-character abbreviated state name<br>
+**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to "heart failure", "pneumonia", or "heart attack"
 
 #### Value
 A character vector containing the name of the highest ranked hospital.
@@ -45,9 +45,9 @@ Find a hospital with a specified ranking with respect to mortality rates from "h
 rankhospital(state, outcome, num) 
 
 #### Arguments
-*state*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with the abbreviation of the state name
-*outcome*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to "heart failure", "pneumonia", or "heart attack"
-*num*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an integer specifying the ranking
+**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with the abbreviation of the state name<br>
+**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to "heart failure", "pneumonia", or "heart attack"<br>
+**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an integer specifying the ranking
 #### Value
 A character vector containing the name of the hospital with the specified rank and outcome.
 
@@ -64,9 +64,9 @@ Rank hospitals in all states
 rankhospital(state, outcome, num) 
 
 #### Arguments
-*state*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with the abbreviation of the state name
-*outcome*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`
-*num*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an integer specifying the ranking
+**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with the abbreviation of the state name<br>
+**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`<br>
+**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an integer specifying the ranking
 
 #### Value
 A character vector containing the name of the hospital with the specified rank and outcome.
