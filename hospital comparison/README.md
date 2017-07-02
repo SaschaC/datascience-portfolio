@@ -20,60 +20,59 @@ For example, `source("best.R")`.
 ### best()
 
 #### Description
-Find the best hospital with respect to mortality rates from "heart failure", "pneumonia", or "heart attack".
+Find the best hospital with respect to mortality rates from "heart failure", "pneumonia", or "heart attack" in a specified state.
 
 #### Usage 
 best(state, outcome) 
 
 #### Arguments
-**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with a 2-character abbreviated state name<br>
-**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to "heart failure", "pneumonia", or "heart attack"
+**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string with a 2-character abbreviated state name<br>
+**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`
 
 #### Value
 A character vector containing the name of the highest ranked hospital.
 
 #### Example
 
-`best("TX", "herat failure")`
+`best("TX", "heart failure")`
 
 ### rankhospital()
 
 #### Description
-Find a hospital with a specified ranking with respect to mortality rates from "heart failure", "pneumonia", or "heart attack"..
+Find a hospitals with a specified ranking with respect to mortality rates from "heart failure", "pneumonia", or "heart attack" in a specified state.
 
 #### Usage 
 rankhospital(state, outcome, num) 
 
 #### Arguments
-**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with the abbreviation of the state name<br>
-**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to "heart failure", "pneumonia", or "heart attack"<br>
-**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an integer specifying the ranking
+**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string with a 2-character abbreviated state name<br>
+**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`
+**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the ranking
 #### Value
 A character vector containing the name of the hospital with the specified rank and outcome.
 
 #### Example
 
-`rankhospital("TX", "heart failure", 3) # returns the hospital with the third-lowest mortality rate from heart failure`
+`rankhospital("TX", "heart failure", 3) # returns the hospital with the third-lowest mortality rate from heart failure in Texas
   
 ## rankall()
 
 #### Description
-Rank hospitals in all states
+Find a hospital with a specified ranking with respect to mortality rate from "heart failure", "pneumonia", or "heart attack" across all states.
 
 #### Usage 
-rankhospital(state, outcome, num) 
+rankall(outcome, num) 
 
 #### Arguments
-**state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string with the abbreviation of the state name<br>
-**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`<br>
-**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an integer specifying the ranking
+**outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`
+**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the ranking
 
 #### Value
 A character vector containing the name of the hospital with the specified rank and outcome.
 
 #### Example
 
-`rankhospital("TX", "heart failure", 3)` 
+`rankall("heart failure", 3) # returns the hospital with the third-lowest mortality rate from heart failure across all states
 
 ## Dataset
 
