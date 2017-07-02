@@ -30,7 +30,7 @@ best(state, outcome)
 **outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`
 
 #### Value
-A character vector containing the name of the highest ranked hospital
+A character vector corresponding to the name of the hospital
 
 #### Example
 
@@ -49,7 +49,7 @@ rankhospital(state, outcome, num)
 **outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`<br>
 **num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the ranking
 #### Value
-A character vector containing the name of the hospital with the specified rank and outcome
+A character vector corresponding to the name of the hospital
 
 #### Example
 
@@ -68,7 +68,7 @@ rankall(outcome, num)
 **num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the ranking
 
 #### Value
-A character vector containing the name of the hospital with the specified rank and outcome
+A character vector corresponding to the name of the hospital
 
 #### Example
 
