@@ -9,7 +9,7 @@ run by the U.S. Department of Health and Human Services (http://hospitalcompare.
 	- [best()](#best)
 	- [rankhospital()](#rankhospital)
 	- [rankall()](#rankall)
-- [Data set](#data)
+- [Dataset](#dataset)
 
 ## Setup
 Download all files of this repo into one folder. After having downloaded all files, open R and load one of the 3 R functions into your workspace by using the function `source()`. As an argument to `source()` you have to provide the path and file name of the function that you want to load.
