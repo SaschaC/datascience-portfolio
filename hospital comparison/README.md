@@ -47,7 +47,7 @@ rankhospital(state, outcome, num)
 #### Arguments
 **state**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string with a 2-character abbreviated state name<br>
 **outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`<br>
-**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the ranking
+**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the rank
 #### Value
 A character vector corresponding to the name of the hospital
 
@@ -58,14 +58,14 @@ A character vector corresponding to the name of the hospital
 ## rankall()
 
 #### Description
-Find a hospital with a specified rank with respect to mortality rate from "heart failure", "pneumonia", or "heart attack" across all states.
+Find a hospital with a specified rank with respect to mortality rates from "heart failure", "pneumonia", or "heart attack" across all states.
 
 #### Usage 
 rankall(outcome, num) 
 
 #### Arguments
 **outcome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string corresponding to `"heart failure"`, `"pneumonia"`, or `"heart attack"`<br>
-**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the ranking
+**num**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer specifying the rank
 
 #### Value
 A character vector corresponding to the name of the hospital
